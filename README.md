@@ -4,7 +4,7 @@ Minimal **4-channel indicator panel** built with Flutter.
 Each indicator switches between **🟥 OFF** and **🟩 ON** and is rendered with crisp **SVG** icons — perfect for status dashboards and UI prototypes.
 
 <p align="center">
-  <img alt="Switching Indicators preview" src="assets/preview.png" width="820" />
+  
 </p>
 
 <p align="center">
