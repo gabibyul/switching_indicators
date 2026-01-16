@@ -16,7 +16,7 @@ Each indicator toggles between **red (OFF)** and **green (ON)** and is rendered 
 
 ---
 
-## ✨ What you get
+## 🧩 What you get
 
 - **4 indicators** in one row (fixed, predictable layout)
 - **Two states per indicator**
@@ -29,7 +29,7 @@ Each indicator toggles between **red (OFF)** and **green (ON)** and is rendered 
 
 ---
 
-## 🧠 How it works
+## 🛠️ How it works
 
 The UI listens to a `ConnectionCubit` and renders a list of 4 booleans:
 
@@ -40,7 +40,7 @@ So each indicator is simply driven by `statuses[index]`.
 
 ---
 
-## 🚀 Getting started
+## ▶️ Getting started
 
 ### 1) Install dependencies
 
