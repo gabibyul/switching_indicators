@@ -1,3 +1,5 @@
+// lib/widgets/status_button.dart
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -13,7 +15,7 @@ class StatusButtons extends StatelessWidget {
     return BlocBuilder<ConnectionCubit, ConnectionStateTe>(
       builder: (context, state) {
         final statuses = state.when(
-          initial: () => [false, false, false, false], // дефолт
+          initial: () => [false, false, false, false],
           changes: (statuses) => statuses,
         );
 

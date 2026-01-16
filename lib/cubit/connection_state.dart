@@ -1,3 +1,5 @@
+// lib/cubit/connection_state.dart
+
 part of 'connection_cubit.dart';
 
 @freezed
