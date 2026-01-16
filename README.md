@@ -1,7 +1,7 @@
 # Switching Indicators (Flutter)
 
-Beautiful, minimal **4-channel status panel** built with Flutter.  
-Each indicator toggles between **red (OFF)** and **green (ON)** and is rendered as crisp **SVG** icons — perfect for dashboards, device/connection monitors, demo kiosks, and UI prototypes.
+Minimal **4-channel indicator panel** built with Flutter.  
+Each indicator switches between **🟥 OFF** and **🟩 ON** and is rendered with crisp **SVG** icons — perfect for status dashboards and UI prototypes.
 
 <p align="center">
   <img alt="Switching Indicators preview" src="assets/preview.png" width="820" />
@@ -18,31 +18,29 @@ Each indicator toggles between **red (OFF)** and **green (ON)** and is rendered 
 
 ## 🧩 What you get
 
-- **4 indicators** in one row (fixed, predictable layout)
+- **4 indicators** in a single row (fixed layout)
 - **Two states per indicator**
-  - 🟥 Red = *inactive / disconnected / OFF*
-  - 🟩 Green = *active / connected / ON*
-- **Clean state management** with `flutter_bloc`
-- **Immutable state** with `freezed`
-- **Sharp SVG rendering** via `flutter_svg`
-- Great base for adding realtime updates (WebSocket/MQTT/BLE/REST)
+  - 🟥 Red = OFF
+  - 🟩 Green = ON
+- State management with `flutter_bloc`
+- Immutable state with `freezed`
+- SVG rendering via `flutter_svg`
 
 ---
 
 ## 🛠️ How it works
 
-The UI listens to a `ConnectionCubit` and renders a list of 4 booleans:
+UI listens to `ConnectionCubit` and renders a `List<bool>` with 4 values:
 
 - `false` → `assets/{index}_red_button.svg`
 - `true`  → `assets/{index}_green_button.svg`
 
-So each indicator is simply driven by `statuses[index]`.
+Each icon is driven by `statuses[index]`.
 
 ---
 
 ## ▶️ Getting started
 
-### 1) Install dependencies
-
 ```bash
 flutter pub get
+flutter run
